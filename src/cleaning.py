@@ -24,5 +24,16 @@ class DataCleaner:
         }, inplace=True)
         return self
 
-    def cols_to_int64(self,df):
+    # changes all object columns to int64 type
+    def unemployment_object_cols_to_int64(self):
+        object_columns = ['Employment', 'Unemployment', "Unemployment Rate", "Civilian Labor Force"]
+        for column in object_columns:
+            self.df[column] = (self.df[column]
+                               .astype(str)
+                               .str.replace(",", "")
+                               .str.replace(".", "")
+                               .astype(int))
+        return self
+        
+    # def load_raw_data(self, df):
         
