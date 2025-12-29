@@ -74,11 +74,14 @@ source venv/bin/activate
 Run ```pip install -r requirements.txt``` This will install all the required dependencies.
 
 ### 5. Using Jupyter Notebooks
-This project uses Jupyter notebooks instead of the traditional Python file. The advantages of using this file type are the ability to run code blocks independently of one another in python cells. Markdown cells are also able to be inserted into the document, making for presentable code. 
+The maion project file is named **presentation.ipynb.** Use this file to view the findings.
+
+This project uses Jupyter notebooks instead of a traditional Python file. The advantages of using this file type are the ability to run code blocks independently of one another in python cells. Markdown cells are also able to be inserted into the document, making for presentable code. 
 
 In order to use the notebook:
-1. Select the Kernel of Python installed from requirements.txt.
-2. Run the file using the 'run' button found in your IDE. This will generate all the code and visualizations within the notebook itself, and not in your terminal.
+1. Install a Jupyter Notebook Extension for your IDE if required.
+2. Select the Kernel of Python installed from requirements.txt.
+3. Run the file using the 'run' button found in your preferred IDE. This will generate all the code and visualizations within the notebook itself, and not in your terminal.
 
 # Author
 David English
